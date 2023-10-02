@@ -1,0 +1,434 @@
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;700&display=swap');
+
+body {
+    background-color: #141416;
+}
+
+h1,h2,h3 {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+    font-size: 72px;
+    margin: 0px;
+    padding-right: 80px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-top: 0px;
+    margin-bottom: 16px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #777E90;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+li {
+    color: #777E90;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    height: 32px;
+}
+
+main {
+    background-image: url("images/shadow.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+.lm-btn {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #1a1a1d;
+    border: 0.1px solid rgba(128, 128, 128, 0.5) ;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.lm-cvr {
+    padding-left: 10px;
+}
+
+
+/* Styling of main nav */
+.main-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 15px 0px;
+}
+
+.main-nav-container ul {
+    display: flex;
+}
+
+.main-nav-container ul li {
+    padding: 0px 10px;
+}
+
+.connect {
+    padding: 10px 15px;
+    border: none;
+    background-color: #786eff;
+    color: white;
+    border-radius: 25px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling of first section - landing*/
+.landing-container {
+    display: flex;
+
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-top: 80px;
+    margin-bottom: 80px;
+}
+
+.landing-txt {
+    margin-top: 12px;
+}
+
+.small-txt {
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.hero-email-container {
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+.hero-email-container input {
+    background-color: #1a1a1d;
+    color: #777E90;
+    border: 0.1px solid rgba(128, 128, 128, 0.5) ;
+    border-radius: 50px;
+    padding: 10px 0px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.hero-email-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color: #3568D4;
+    color: white;
+    transform: translateX(20px);
+    padding: 10px 20px;
+}
+
+
+/* Styling of second section - Features */
+.features-container {
+    display: flex;    
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.feature {
+    background-color: #141416 ;
+    border: 0.1px solid rgba(128, 128, 128, 0.5) ;
+    border-radius: 10px;
+    padding: 40px;
+    flex: 30%;
+    margin-right: 40px;
+
+}
+
+h2:nth-child(1) {
+    text-align: center;
+}
+
+.feature-img {
+    height: 72px;
+    width: 72px;
+}
+
+.feature-txt {
+    margin-bottom: 40px;
+}
+
+/* Styling of third section - piggylads NFTs */
+.piggylads-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-left: 15%;
+    margin-bottom: 80px;
+
+}
+
+.piggylads-txt {
+    margin-bottom: 50px;
+}
+
+/* Styling of third section - piggylads token */
+.poi-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-right: 15%;
+    margin-left: 15%;
+
+    background-color: #1a1a1d;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 80px;
+}
+
+.poi-inner-container {
+    width: 30%;
+}
+
+.poi-txt {
+    color: white;
+}
+
+.poi-txt2 {
+    margin-bottom: 56px;
+}
+
+.img-poi {
+    height: 490px;
+}
+
+/* Styling of third section - FAQs */
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 80px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion-container {
+    width: 100%;
+}
+
+.accordion {
+    width: 100%;
+    background-color: #141416;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    transition: 0.4s;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #141416;
+  }
+
+  .active {
+    border: none;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: #141416;
+    display: none;
+    overflow: hidden;
+    border-bottom: 1px solid gray;
+  }
+
+  .panel p {
+    text-align: start;
+  }
+
+
+
+/* Styling of third section - Contact */
+.contact-container {
+    display: flex;
+    align-items: center;
+    background-image: url("images/launch-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin-bottom: 80px;
+    height: 400px;
+}
+
+.contact-inner {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    width: 40%;
+}
+
+.contact-email-container {
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+.contact-email-container input {
+    background-color: #1a1a1d;
+    color: #777E90;
+    border: 0.1px solid rgba(128, 128, 128, 0.5) ;
+    border-radius: 50px;
+    padding: 10px 0px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.contact-email-container button {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    height: 100%;
+    border-radius: 50px;
+    border: none;
+    background-color: #3568D4;
+    color: white;
+    transform: translateX(20px);
+    padding: 10px 20px;
+}
+
+/* Styling of third section - Footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+
+
+    margin-top: 100px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid gray;
+}
+
+.copyright p {
+    padding: 40px;
+    margin: 0px;
+}
+
+.footer-nav li{
+    margin: 0px 0px 20px 0px;
+    font-weight: bold
+}
+
+footer ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-container > p{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.social-container > a{
+    margin-bottom: 20px;
+}
+
+.contact-social {
+    color: #777E90;
+}
+
+.footer-newsletter p{
+    color: white;
+}
+
+.contact-email {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-email-container {
+    width: 200px;
+    height: 32px;
+    max-width: 100%;
+    position: relative;
+}
+
+.footer-email-container input {
+    background-color: #1a1a1d;
+    color: #777E90;
+    border: 0.1px solid rgba(128, 128, 128, 0.5) ;
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    padding-left: 20px;
+}
+
+.small-email-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: none;
+    background-color: #3568D4;
+    color: white;
+    transform: translateX(20px);
+}
